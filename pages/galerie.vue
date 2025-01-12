@@ -5,11 +5,12 @@
     icon="i-heroicons-camera"
     title="Galerie"
     description="Explorez ma galerie d'images et découvrez mon travail."
+    data-aos="fade-up"
   />
 
   <!--filter-->
 
-  <UTabs :items="items" class="w-full mx-auto" variant="link" :ui="{ trigger: 'flex-1' }">
+  <UTabs :items="items" class="w-full mx-auto" variant="link" :ui="{ trigger: 'flex-1' }" data-aos="fade-down" data-aos-duration="800" >
     <template #portrait>
       <Gallery :imgs="imgs_portrait" />
     </template>

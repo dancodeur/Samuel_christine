@@ -2,7 +2,7 @@
 
     <!--Hero section-->
     
-    <ULandingHero data-scroll-section data
+    <ULandingHero data-aos="fade-up" 
         title="Immortalisez vos instants les plus précieux avec élégance."
         description="Racontez votre histoire à travers des images empreintes de pureté et d’élégance."
         :links="[{ label: 'Voir la galerie', to:'/galerie', icon: 'i-heroicons-camera', size: 'lg'}]"
@@ -11,7 +11,7 @@
     
     <!--Services-->
     
-    <UPageGrid data-scroll-section>
+    <UPageGrid data-scroll-section data-aos="fade-down" data-aos-duration="800">
         <UPageCard v-for="(module, index) in modules" :key="index" v-bind="module" target="_blank">
             <template #description data-scroll
             data-scroll-speed="2">
@@ -51,7 +51,7 @@
     <!--Témoignages-->
 
     
-    <UPageColumns class="mt-[50px]">
+    <UPageColumns class="mt-[50px]" data-aos="fade-down" data-aos-duration="800">
         <UPageCard v-for="(testimonial, index) in testimonials" :key="index">
         <q class="italic text-gray-500 dark:text-gray-400">
             {{ testimonial.quote }}
@@ -74,14 +74,14 @@
 
     <!--About section-->
 
-    <ULandingSection 
+    <ULandingSection data-aos="fade-left" data-aos-duration="800" 
     id="about"
     title="A propos"
     description="Passionné par l'art de capturer l'instant, je m’engage à raconter votre histoire à travers des images uniques et significatives."
     :features="[{ name: 'Services variés', description: 'Je propose une gamme de services variés, pour répondre aux besoins des particuliers et des professionnels.', icon: 'i-heroicons-square-3-stack-3d' },{ name: 'Contact', description: 'Contactez-moi par mail : exemple@gmail.com ou via mes réseaux.', icon: 'i-heroicons-envelope' }]"
     align="right"
   >
-    <img
+    <img data-aos="fade-right" data-aos-duration="800"
       src="https://picsum.photos/id/167/500/600"
       class="w-full rounded-md shadow-xl ring-1 ring-gray-300 dark:ring-gray-700"
     />
