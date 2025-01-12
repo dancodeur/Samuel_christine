@@ -1,6 +1,8 @@
 <template>
   <NuxtRouteAnnouncer />
-    <NuxtLayout  v-locomotive="{smooth:true}">
+  <NuxtLoadingIndicator/>
+    <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
 </template>
+

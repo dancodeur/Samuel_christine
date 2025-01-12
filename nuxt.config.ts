@@ -9,4 +9,4 @@ export default defineNuxtConfig({
     '@nuxt/image',
     'nuxt-locomotive-scroll'
   ]
-})
+}); 

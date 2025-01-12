@@ -1,7 +1,7 @@
 <template>
     <UHeader :links="links">
         <template #logo>
-           <h1>Samuel Photo</h1>
+           <h1>Logo</h1>
         </template>
 
         <template #right>
@@ -15,6 +15,13 @@
     <UContainer>
       <slot />
     </UContainer>
+
+    <!--End section-->
+
+    <UDivider
+        label="Logo"
+        :ui="{ label: 'text-primary-500 dark:text-primary-400' }"
+    />
 
 
     <!--Footer Links-->
@@ -36,13 +43,17 @@
 <script setup>
 
 const links = [{
+        label: 'Home',
+        icon: 'i-heroicons-home',
+        to: '/'
+        },{
         label: 'Galerie',
         icon: 'i-heroicons-camera',
-        to: '#galerie'
+        to: '/galerie'
         }, {
         label: 'A propos',
-        icon: 'i-heroicons-square-3-stack-3d',
-        to: '#about'
+        icon: 'i-heroicons-information-circle',
+        to: '/about'
         }]; 
 
 </script>

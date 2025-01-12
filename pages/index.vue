@@ -5,7 +5,7 @@
     <ULandingHero data-scroll-section data
         title="Immortalisez vos instants les plus précieux avec élégance."
         description="Racontez votre histoire à travers des images empreintes de pureté et d’élégance."
-        :links="[{ label: 'Voir la galerie', icon: 'i-heroicons-camera', size: 'lg' }]"
+        :links="[{ label: 'Voir la galerie', to:'/galerie', icon: 'i-heroicons-camera', size: 'lg'}]"
     />
 
     
@@ -24,7 +24,7 @@
 
     <section class="mt-[50px] space-y-6">
 
-        <h2 class="text-2xl font-semibold text-center" id="galerie">Galerie</h2>
+        <h2 class="text-2xl font-semibold text-center">Galerie</h2>
 
         <div class="flex flex-wrap gap-4  justify-center">
             <div
@@ -76,23 +76,16 @@
 
     <ULandingSection 
     id="about"
-    title="Samuel Christine"
-    description="Passionné par l'art de capturer l'instant, je suis un photographe professionnel spécialisé dans [portraits, mariages, événements, etc.].Je m’engage à raconter votre histoire à travers des images uniques et significatives." "
-    :features="[{ name: 'Photographie événementielle', description: 'Conférences, séminaires, soirées de lancement ou team building.', icon: 'i-heroicons-camera' }, { name: 'Services variés', description: 'Je propose une gamme de services variés, pour répondre aux besoins des particuliers et des professionnels.', icon: 'i-heroicons-square-3-stack-3d' }]"
+    title="A propos"
+    description="Passionné par l'art de capturer l'instant, je m’engage à raconter votre histoire à travers des images uniques et significatives."
+    :features="[{ name: 'Services variés', description: 'Je propose une gamme de services variés, pour répondre aux besoins des particuliers et des professionnels.', icon: 'i-heroicons-square-3-stack-3d' },{ name: 'Contact', description: 'Contactez-moi par mail : exemple@gmail.com ou via mes réseaux.', icon: 'i-heroicons-envelope' }]"
     align="right"
   >
     <img
-      src="https://picsum.photos/500/600"
+      src="https://picsum.photos/id/167/500/600"
       class="w-full rounded-md shadow-xl ring-1 ring-gray-300 dark:ring-gray-700"
     />
   </ULandingSection>
-
-  <!--End section-->
-
-  <UDivider
-    label="Design by Dan Elenga"
-    :ui="{ label: 'text-primary-500 dark:text-primary-400' }"
-  />
 
     
 
@@ -158,11 +151,11 @@
         const imgs = [
         "https://picsum.photos/id/237/300/400",
         "https://picsum.photos/id/137/300/400",
-        "https://picsum.photos/id/37/300/400",
-        "https://picsum.photos/id/117/300/400",
-        "https://picsum.photos/id/47/300/400",
-        "https://picsum.photos/id/77/300/400",
-        "https://picsum.photos/id/17/300/400",
+        "https://picsum.photos/id/167/300/400",
+        "https://picsum.photos/id/90/300/400",
+        "https://picsum.photos/id/360/300/400",
+        "https://picsum.photos/id/257/300/400",
+        "https://picsum.photos/id/1/300/400",
         ];
 
         const showImg = (index) => {
