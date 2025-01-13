@@ -40,9 +40,9 @@ const links = [{
         icon: 'i-heroicons-home',
         to: '/'
         },{
-        label: 'Galeries',
+        label: 'Portfolio',
         icon: 'i-heroicons-camera',
-        to: '/galerie'
+        to: '/portfolio'
         }, {
         label: 'A propos',
         icon: 'i-heroicons-information-circle',
