@@ -2,7 +2,7 @@
 
     <section class="mt-[50px] space-y-6">
 
-        <div class="flex flex-wrap gap-4  justify-center">
+        <div class="flex flex-wrap gap-1  justify-center">
             <div
                 v-for="(src, index) in imgs"
                 :key="index"
@@ -81,13 +81,13 @@
         const indexRef = ref(0);
 
         const imgs = [
-        "https://picsum.photos/id/237/300/400",
-        "https://picsum.photos/id/137/300/400",
-        "https://picsum.photos/id/167/300/400",
-        "https://picsum.photos/id/90/300/400",
-        "https://picsum.photos/id/360/300/400",
-        "https://picsum.photos/id/257/300/400",
-        "https://picsum.photos/id/1/300/400",
+        "https://picsum.photos/id/237/400/500",
+        "https://picsum.photos/id/137/400/500",
+        "https://picsum.photos/id/167/400/500",
+        "https://picsum.photos/id/90/400/500",
+        "https://picsum.photos/id/360/400/500",
+        "https://picsum.photos/id/257/400/500",
+        "https://picsum.photos/id/1/400/500",
         ];
 
         const showImg = (index) => {
