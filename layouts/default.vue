@@ -16,13 +16,6 @@
       <slot />
     </UContainer>
 
-    <!--End section-->
-
-    <UDivider
-        label="Logo"
-        :ui="{ label: 'text-primary-500 dark:text-primary-400' }"
-    />
-
 
     <!--Footer Links-->
 
@@ -47,7 +40,7 @@ const links = [{
         icon: 'i-heroicons-home',
         to: '/'
         },{
-        label: 'Galerie',
+        label: 'Galeries',
         icon: 'i-heroicons-camera',
         to: '/galerie'
         }, {
